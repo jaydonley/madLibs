@@ -13,6 +13,7 @@
         font-family: Arial, Helvetica, sans-serif;
         background: linear-gradient(35deg, rgb(171, 207, 171), aliceblue);
         
+        
     }
     h1{
         font-size: 45px;
@@ -25,6 +26,7 @@
     
     p{
         margin: 15%;
+        font-size: x-large;
     }
     
     .textbox{
@@ -34,24 +36,12 @@
         background-color: aliceblue;
         color: black;
         font-weight: bold;
-        
-        
     }
 
-    /* #left {
-        float: left;
-        width: 80px;
-        display: block;
-      }
-      #right {
-        float: right;
-        width: 80px;
-        display: block;
-      } */
-    
       button{
         height: 50px;
         background-color: rgb(177, 217, 252);
+        
       }
       button:hover{
         transform: scale(1.1);
@@ -61,46 +51,61 @@
 
 </style>
 <body>
+<script src="./app.js"></script>
 
     <h1>My Best Friend is a Ghost</h1>
     <h2>A Spooky Fun MadLib!</h2>
 
-    <input type="text" placeholder="1. adjective" class="textbox" id="left">
+    <input type="text" placeholder="1. adjective" class="textbox" id="input1">
     <label for="1. adjective"></label>
-    <input type="text" placeholder="2. adjective" class="textbox" id="left">
+
+    <input type="text" placeholder="2. adjective" class="textbox" id="input2">
     <label for="2.adjective"></label>
-    <input type="text" placeholder="3. noun; number" class="textbox" id="left">
+
+    <input type="text" placeholder="3. noun; number" class="textbox" id="input3">
     <label for="3. noun; number"></label>
-    <input type="text" placeholder="4. verb -ing" class="textbox" id="left" label>
+
+    <input type="text" placeholder="4. verb -ing" class="textbox" id="input4" label>
     <label for="4. verb -ing"></label>
-    <input type="text" placeholder="5. noun; room at school" class="textbox" id="left">
+
+    <input type="text" placeholder="5. noun; room at school" class="textbox" id="input5">
     <label for="5. noun; room at school"></label>
-    <input type="text" placeholder="6. noun; first name" class="textbox" id="left">
+
+    <input type="text" placeholder="6. noun; first name" class="textbox" id="input6">
     <label for="6. noun; first name"></label>
-    <input type="text" placeholder="7. noun; number" class="textbox" id="left">
+
+    <input type="text" placeholder="7. noun; number" class="textbox" id="input7">
     <label for="7.noun; number"></label>
-    <input type="text" placeholder="8. verb" class="textbox" id="right">
+
+    <input type="text" placeholder="8. verb" class="textbox" id="input8">
     <label for="8. verb"></label>
-    <input type="text" placeholder="9. adjective; color" class="textbox" id="right">
+
+    <input type="text" placeholder="9. adjective; color" class="textbox" id="input9">
     <label for="9.adjective; color"></label>
-    <input type="text" placeholder="10. adverb" class="textbox" id="right">
+
+    <input type="text" placeholder="10. adverb" class="textbox" id="input10">
     <label for="10. adverb"></label>
-    <input type="text" placeholder="11. adjective" class="textbox" id="right">
+
+    <input type="text" placeholder="11. adjective" class="textbox" id="input11">
     <label for="11. adjective"></label>
-    <input type="text" placeholder="12. adjective" class="textbox" id="right">
+
+    <input type="text" placeholder="12. adjective" class="textbox" id="input12">
     <label for="12. adjective"></label>
-    <input type="text" placeholder="13. adjective" class="textbox" id="right">
+
+    <input type="text" placeholder="13. adjective" class="textbox" id="input13">
     <label for="13. adjective"></label>
-    <input type="text" placeholder="14. verb" class="textbox" id="right">
+
+    <input type="text" placeholder="14. verb" class="textbox" id="input14">
     <label for="14. verb"></label>
 
 
-    <button>Let's see what you came up with!</button class="button">
 
-    <p>
+    <button type="button" id="button" onclick="createParagraph()">See your answer at the bottom of the page!</button>
+
+    <p id="paragraph">
         This might sound *1. adjective*, but my *2. adjective* friend is a ghost. We met in *3. noun; number* grade at school while they were *4. verb -ing* the *5. noun; room at school*. Their name is *6. noun; first name* and they were *7. noun; number* years old when they died. No one can *8. verb* my friend by me. They have *9. adjective;color* hair and *10. adverb* - *11. adjective*, and their clothes are *12. adjective*. Having an invisible friend is *13. adjective*, but they always win at *14. verb* and seek.
     </p>
 
-    
+    <div id="answer"></div>
 </body>
 </html>
