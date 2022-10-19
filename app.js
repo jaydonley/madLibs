@@ -16,7 +16,7 @@ var input12 = document.getElementById("input12").value;
 var input13 = document.getElementById("input13").value;
 var input14 = document.getElementById("input14").value;
 
-var paragraph = "<p> This might sound " + input1 + " , but my " + input2 + " friend is a ghost. We met in " + input3 +" grade at school while they were " + input4 + " the " + input5 + ". Their name is " + input6 + " and they were " + input7 + " years old when they died. No one can " +input8 + " my friend but me. They have " + input9 + " hair and " + input10 + " " + input11 + ", and their clothes are " + input12 + ". Having an invisible friend is " + input13 + ", but they always win at " + input14 + " and seek.</p>";
+var paragraph = "<p> This might sound " + input1 + ", but my " + input2 + " friend is a ghost. We met in grade " + input3 +" at school while they were " + input4 + " in the " + input5 + ". Their name is " + input6 + " and they were " + input7 + " years old when they died. No one can " +input8 + " my friend but me. They have " + input9 + " hair and " + input10 + " " + input11 + ", and their clothes are " + input12 + ". Having an invisible friend is " + input13 + ", but they always win at " + input14 + " and seek.</p>";
 
 
 console.log(paragraph);

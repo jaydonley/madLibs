@@ -9,7 +9,7 @@
 </head>
 <style>
     body{
-        /* background-color: rgb(205, 245, 205); */
+        
         font-family: Arial, Helvetica, sans-serif;
         background-image: url(https://media.gettyimages.com/vectors/fun-halloween-border-with-ghost-background-vector-id165609289?s=2048x2048);
             
@@ -33,14 +33,18 @@
         height: 30px;
         margin-bottom: 3px;
         background-color: rgb(230, 196, 134);
-        color: black;
         font-weight: bold;
+    }
+
+    .textbox::placeholder {
+        color: rgb(37, 36, 36);
     }
 
       button{
         height: 50px;
-        background-color: black;
-        color: white;
+        font-size: 18px;
+        background-color: rgb(231, 201, 119);
+        
         
       }
       button:hover{
@@ -53,17 +57,6 @@
 </style>
 <body>
 <script src="./app.js"></script>
-
-
-
-
-<!--WAS WORKING HERE ON THE BUTTON CLICK TO SCROLL-->
-
-<a href="#answer">jump to answer</a>
-
-
-
-
 
 
     <h1>My Best Friend is a Ghost</h1>
@@ -96,11 +89,11 @@
     <input type="text" placeholder="9. adjective; color" class="textbox" id="input9">
     <label for="9.adjective; color"></label>
 
-    <input type="text" placeholder="10. adverb" class="textbox" id="input10">
-    <label for="10. adverb"></label>
+    <input type="text" placeholder="10. adjective" class="textbox" id="input10">
+    <label for="10. adjective"></label>
 
-    <input type="text" placeholder="11. adjective" class="textbox" id="input11">
-    <label for="11. adjective"></label>
+    <input type="text" placeholder="11. plural noun" class="textbox" id="input11">
+    <label for="11. plural noun"></label>
 
     <input type="text" placeholder="12. adjective" class="textbox" id="input12">
     <label for="12. adjective"></label>
@@ -113,11 +106,13 @@
 
 </ul>
 
-    <button type="button" id="button" onclick="createParagraph()">See your answer at the bottom of the page!</button>
 
-    <p id="paragraph">
-        This might sound *1. adjective*, but my *2. adjective* friend is a ghost. We met in *3. noun; number* grade at school while they were *4. verb -ing* the *5. noun; room at school*. Their name is *6. noun; first name* and they were *7. noun; number* years old when they died. No one can *8. verb* my friend by me. They have *9. adjective;color* hair and *10. adverb* - *11. adjective*, and their clothes are *12. adjective*. Having an invisible friend is *13. adjective*, but they always win at *14. verb* and seek.
-    </p>
+
+    <button type="button" id="button" onclick="createParagraph()"><a href="#answer" style="color:black" style="font-size:45px ;" >Let's see what you came up with!</a></button>
+
+    <!-- <p id="paragraph">
+        This might sound *1. adjective*, but my *2. adjective* friend is a ghost. We met in grade *3. noun; number* at school while they were *4. verb -ing* the *5. noun; room at school*. Their name is *6. noun; first name* and they were *7. noun; number* years old when they died. No one can *8. verb* my friend by me. They have *9. adjective;color* hair and *10. adverb* - *11. adjective*, and their clothes are *12. adjective*. Having an invisible friend is *13. adjective*, but they always win at *14. verb* and seek.
+    </p> -->
 
     <div id="answer"></div>
 </body>
