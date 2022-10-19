@@ -11,9 +11,8 @@
     body{
         /* background-color: rgb(205, 245, 205); */
         font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(35deg, rgb(171, 207, 171), aliceblue);
-        
-        
+        background-image: url(https://media.gettyimages.com/vectors/fun-halloween-border-with-ghost-background-vector-id165609289?s=2048x2048);
+            
     }
     h1{
         font-size: 45px;
@@ -33,19 +32,21 @@
         display: block;
         height: 30px;
         margin-bottom: 3px;
-        background-color: aliceblue;
+        background-color: rgb(230, 196, 134);
         color: black;
         font-weight: bold;
     }
 
       button{
         height: 50px;
-        background-color: rgb(177, 217, 252);
+        background-color: black;
+        color: white;
         
       }
       button:hover{
         transform: scale(1.1);
-        background-color: rgb(190, 225, 255);
+        background-color: black;
+        color: orange;
         cursor: pointer;
       }
 
@@ -53,9 +54,21 @@
 <body>
 <script src="./app.js"></script>
 
+
+
+
+<!--WAS WORKING HERE ON THE BUTTON CLICK TO SCROLL-->
+
+<a href="#answer">jump to answer</a>
+
+
+
+
+
+
     <h1>My Best Friend is a Ghost</h1>
     <h2>A Spooky Fun MadLib!</h2>
-
+<ul>
     <input type="text" placeholder="1. adjective" class="textbox" id="input1">
     <label for="1. adjective"></label>
 
@@ -98,7 +111,7 @@
     <input type="text" placeholder="14. verb" class="textbox" id="input14">
     <label for="14. verb"></label>
 
-
+</ul>
 
     <button type="button" id="button" onclick="createParagraph()">See your answer at the bottom of the page!</button>
 
